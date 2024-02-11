@@ -1,0 +1,57 @@
+.profile-img {
+    height: 400px;
+    /* border-radius: 100% 50%; */
+}
+
+.thumbnail {
+    height: 150px;
+}
+
+
+.project {
+    width: 80%;
+}
+
+#about-me {
+    background-color: #dbdbff;
+}
+
+#contact-me {
+    background-color: #dbdbff;
+}
+
+/* tic tac toe styles */
+#tic-tac-toe {
+    transform: rotate(10deg);
+    min-width: 400px
+}
+
+#tic-tac-toe input {
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    
+    /* border: 2px solid black; */
+    border: none;
+    margin: 0;
+
+    font-size: 40px;
+
+    text-align: center;
+
+    background-color: transparent;
+
+    outline: none;
+}
+
+#tic-tac-toe .row:nth-child(2) input {
+    /* Selects the 4th, 5th, and 6th inputs */
+    border-top: 2px solid #d6d6f5;
+    border-bottom: 2px solid #d6d6f5;
+}
+
+#tic-tac-toe input:nth-child(2) {
+    /* Selects the 2nd, 5th, and 8th inputs */
+    border-left: 2px solid #d6d6f5;
+    border-right: 2px solid #d6d6f5;
+}
