@@ -13,8 +13,8 @@
 <body>
     <!-- About me -->
 
-    <section id="about-me" class="d-flex align-items-end justify-content-around p-5">
-        <div id="tic-tac-toe">
+    <section id="about-me" class="row justify-content-center p-5">
+        <div id="tic-tac-toe" class="col-lg-2 d-none d-md-block mt-5 offset-1">
             <div class="row">
                 <input type="text" id="c0" onclick="play(this)" readonly>
                 <input type="text" id="c1" onclick="play(this)" readonly>
@@ -34,7 +34,8 @@
             </div>
         </div>
 
-        <p class="fs-5" style="width: 30%;">
+        <!--  style="width: 30%;" -->
+        <p class="fs-5 col-lg-6 col-md-12">
             Hi! Ik ben Aina, een junior web developer gevestigd in Leeuwarden. <br><br>
             Terwijl ik mijn carrière in webontwikkeling start, sta ik ook open voor verschillende developer functies waarin ik mij verder kan ontwikkelen. <br><br>
             Neem een kijkje door mijn portfolio om mijn werk te zien of neem contact met me op!
@@ -45,9 +46,12 @@
     <section id="my-projects" class="py-4">
         <h2 class="text-center fw-bold mb-4">Mijn Projecten</h2>
 
+
+
+
             <!-- Geometry challenge -->
-        <div class="d-flex flex-row card w-50 mx-auto justify-content-between mb-4">
-            <div class="card-body w-25 d-flex flex-column justify-content-between">
+        <div class="d-flex flex-lg-row flex-column card col-lg-6 col-md-12 mx-auto justify-content-between mb-4">
+            <div class="card-body col-lg-3 col-md-12 d-flex flex-column justify-content-between">
                 <div>
                     <h5>Geometry Challenge</h5>
                     <p>
@@ -72,44 +76,57 @@
                 </a>
             </div>
             
-            <div id="carousel1" class="carousel slide card-body col-lg-6" data-bs-theme="dark">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carousel1" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <div class="col-lg-8 col-md-12">
+                <div id="carousel1" class="carousel slide card-body" data-bs-theme="dark">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carousel1" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+        
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/geo1.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/geo2.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/geo3.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/geo4.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+        
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+        
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-    
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="images/geo1.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/geo2.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/geo3.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/geo4.png" class="d-block w-100" alt="...">
-                    </div>
-                </div>
-    
-                <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-    
-                <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
         </div>
+            
+
+
+
+
+
+
+
+
+
+
 
             <!-- Chocobook -->
-        <div class="d-flex flex-row card w-50 mx-auto justify-content-between mb-4">
-            <div class="card-body w-25 d-flex flex-column justify-content-between">
+        <div class="d-flex flex-lg-row flex-column card col-lg-6 col-md-12 mx-auto justify-content-between mb-4">
+            <div class="card-body col-lg-3 col-md-12 d-flex flex-column justify-content-between">
                 <div>
                     <h5>Chocobook</h5>
                     <p>
@@ -130,7 +147,7 @@
                 </a>
             </div>
             
-            <div id="carousel2" class="carousel slide card-body col-lg-6">
+            <div id="carousel2" class="carousel slide card-body">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -172,8 +189,8 @@
 
 
             <!-- Library -->
-        <div class="d-flex flex-row card w-50 mx-auto justify-content-between">
-        <div class="card-body w-25 d-flex flex-column justify-content-between">
+        <div class="d-flex flex-lg-row flex-column card col-lg-6 col-md-12 mx-auto justify-content-between mb-4">
+        <div class="card-body col-lg-3 col-md-12 d-flex flex-column justify-content-between">
             <div>
                 <h5>Bibliotheek</h5>
                 <p>
@@ -186,7 +203,7 @@
 
                         <li>Gebruikers hebben de mogelijkheid om boeken te lenen, terug te brengen en hun geleende boeken te bekijken. Daarnaast kunnen ze ook recensies plaatsen.</li>
 
-                        <li>Paginatieknoppen maken het navigeren door de boekencollectie gemakkelijker.</li>
+                        <li>Paginaknoppen maken het navigeren door de boekencollectie gemakkelijker.</li>
                     </ul>
 
                 </p>
